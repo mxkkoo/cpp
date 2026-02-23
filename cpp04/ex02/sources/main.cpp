@@ -17,6 +17,7 @@
 
 int main()
 {
+	//Animal	a;
 	Dog*	dog = new Dog();
 	Cat*	cat = new Cat();
     Dog		dogCopy;
@@ -31,7 +32,9 @@ int main()
 	delete cat;
 	std::cout << std::endl;
 	dogCopy.sayIdea(1);
+	dogCopy.makeSound();
 	catCopy.sayIdea(1);
+	catCopy.makeSound();
     std::cout << std::endl;
     return 0;
 }

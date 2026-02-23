@@ -26,17 +26,12 @@ Cat::Cat(const Cat &other)
 Cat &Cat::operator=(const Cat &other)
 {
 	this->_type = other._type;
-	return *this;
+	return (*this);
 }
 
 void Cat::makeSound(void) const
 {
 	std::cout << "miaou\n";
-}
-
-std::string	Cat::getType(void) const
-{
-	return (this->_type);
 }
 
 Cat::~Cat(void)

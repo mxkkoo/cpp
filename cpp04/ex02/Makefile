@@ -6,16 +6,20 @@
 #    By: kyoussou <kyoussou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/14 17:51:25 by kyoussou          #+#    #+#              #
-#    Updated: 2026/01/21 14:52:54 by kyoussou         ###   ########.fr        #
+#    Updated: 2026/01/21 16:52:08 by kyoussou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = FragTrap
+NAME = Animal
 
 CPP = c++
 CFLAGS = -Wall -Werror -Wextra -Iincludes -std=c++98
 
 FILES = main.cpp \
+		Animal.cpp \
+		Dog.cpp \
+		Cat.cpp \
+		Brain.cpp \
 
 SRC = $(addprefix sources/, $(FILES))
 

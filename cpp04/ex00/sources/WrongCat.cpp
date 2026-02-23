@@ -26,17 +26,12 @@ WrongCat::WrongCat(const WrongCat &other)
 WrongCat &WrongCat::operator=(const WrongCat &other)
 {
 	this->_type = other._type;
-	return *this;
+	return (*this);
 }
 
 void WrongCat::makeSound(void) const
 {
 	std::cout << "miaou\n";
-}
-
-std::string	WrongCat::getType(void) const
-{
-	return (this->_type);
 }
 
 WrongCat::~WrongCat(void)

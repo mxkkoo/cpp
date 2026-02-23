@@ -26,7 +26,7 @@ Animal::Animal(const Animal &other)
 Animal &Animal::operator=(const Animal &other)
 {
 	this->_type = other._type;
-	return *this;
+	return (*this);
 }
 
 void Animal::makeSound(void) const

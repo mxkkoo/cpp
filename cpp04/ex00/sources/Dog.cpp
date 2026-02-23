@@ -26,7 +26,7 @@ Dog::Dog(const Dog &other)
 Dog &Dog::operator=(const Dog &other)
 {
 	this->_type = other._type;
-	return *this;
+	return (*this);
 }
 
 void Dog::makeSound(void) const
@@ -34,12 +34,7 @@ void Dog::makeSound(void) const
 	std::cout << "ouaf\n";
 }
 
-std::string	Dog::getType(void) const
-{
-	return (this->_type);
-}
-
 Dog::~Dog(void)
 {
-	std::cout << "RIP doggo\n";
+	std::cout << "Dog destroyed\n";
 }
